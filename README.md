@@ -9,10 +9,6 @@ CORS Tester 是一个简单的 React 应用，旨在帮助开发者测试跨域�
 - 输入自定义的请求头和请求体（JSON 格式）。
 - 发送请求并在浏览器控制台中查看响应或错误信息。
 
-## 预览
-
-![CORS Tester Preview](link-to-preview-image)
-
 ## 安装与运行
 
 ### 克隆项目
