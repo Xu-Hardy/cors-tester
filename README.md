@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# CORS Tester
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CORS Tester 是一个简单的 React 应用，旨在帮助开发者测试跨域请求。你可以输入 URL、选择请求方法，并添加自定义的请求头和请求体。应用将展示 API 响应或错误信息。
 
-## Available Scripts
+## 功能
 
-In the project directory, you can run:
+- 输入目标 API 的 URL。
+- 选择 HTTP 请求方法（GET、POST、PUT、DELETE、PATCH）。
+- 输入自定义的请求头和请求体（JSON 格式）。
+- 发送请求并在浏览器控制台中查看响应或错误信息。
 
-### `npm start`
+## 预览
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![CORS Tester Preview](link-to-preview-image)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 安装与运行
 
-### `npm test`
+### 克隆项目
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/your-username/cors-tester.git
+cd cors-tester
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 安装依赖
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+确保你已经安装了 Node.js 和 npm。然后在项目目录下运行以下命令安装所需的依赖：
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 启动开发服务器
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+运行以下命令启动开发服务器：
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+打开浏览器并访问 `http://localhost:3000` 来查看应用。
 
-## Learn More
+## 使用方法
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **输入 URL**: 在 URL 输入框中输入你想要测试的 API 地址。
+2. **选择请求方法**: 从下拉菜单中选择请求方法（GET、POST、PUT、DELETE、PATCH）。
+3. **输入 Headers**: 在 Headers 输入框中输入请求头信息，格式为 JSON。例如：
+    ```json
+    {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer YOUR_TOKEN"
+    }
+    ```
+4. **输入 Request Body**: 在 Request Body 输入框中输入请求体信息，格式为 JSON。例如：
+    ```json
+    {
+      "key": "value"
+    }
+    ```
+5. **发送请求**: 点击 “Send Request” 按钮发送请求。响应或错误信息将显示在浏览器的控制台中。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 依赖
 
-### Code Splitting
+- [React](https://reactjs.org/)
+- [Material-UI](https://mui.com/)
+- [Axios](https://axios-http.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 贡献
 
-### Analyzing the Bundle Size
+欢迎贡献！如果你有任何改进建议或发现问题，请提交 Issues 或 Pull Requests。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 许可证
 
-### Making a Progressive Web App
+此项目使用 [MIT 许可证](LICENSE)。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 说明：
+- **项目描述**: 简要说明这个工具的功能和用途。
+- **预览**: 可以添加一个应用预览图像（如果有的话）。
+- **安装与运行**: 包括克隆项目、安装依赖和启动开发服务器的步骤。
+- **使用方法**: 说明如何使用工具，包括输入 URL、选择请求方法、输入请求头和请求体，以及发送请求。
+- **依赖**: 列出项目所需的主要依赖项。
+- **贡献**: 鼓励社区参与贡献代码或报告问题。
+- **许可证**: 指明项目的许可证类型。
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+这个 README 文档可以帮助用户快速了解和使用你的跨域请求测试工具。
