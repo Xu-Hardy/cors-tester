@@ -14,7 +14,7 @@ CORS Tester 是一个简单的 React 应用，旨在帮助开发者测试跨域�
 ### 克隆项目
 
 ```bash
-git clone https://github.com/your-username/cors-tester.git
+git@github.com:Xu-Hardy/cors-tester.git
 cd cors-tester
 ```
 
