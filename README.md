@@ -1,5 +1,5 @@
 # CORS Tester
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd9a4041-0c73-408c-9249-551e6110d73a/deploy-status)](https://app.netlify.com/sites/cors-tool/deploys)
 CORS Tester 是一个简单的 React 应用，旨在帮助开发者测试跨域请求。你可以输入 URL、选择请求方法，并添加自定义的请求头和请求体。应用将展示 API 响应或错误信息。
 
 ## 功能
